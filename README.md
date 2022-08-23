@@ -28,3 +28,4 @@
 - используются картинки в формате .jpg для крупных изображений и .svg для более мелких;
 
 * [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+* [Ссылка на публичный репозиторий](https://github.com/mrandersen09/mesto-project.git)

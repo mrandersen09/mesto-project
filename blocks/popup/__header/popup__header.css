@@ -1,0 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: < 1%,last 4 versions
+*/
+
+.popup__header {
+  margin: 0;
+  justify-self: flex-start;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.21;
+  padding-left: 36px;
+  padding-top: 42px;
+  padding-bottom: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__header {
+    font-size: 18px;
+    line-height: 1.22;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 72px;
+  }
+}

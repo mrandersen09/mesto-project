@@ -1,0 +1,23 @@
+.places-grid__like-button {
+  appearance: none;
+  border: 0;
+  outline: none;
+  width: 22px;
+  height: 19px;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("../../../images/like-button-disabled.svg");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.places-grid__like-button:hover {
+  background-image: url("../../../images/like-button-hover.svg");
+  cursor: pointer;
+}
+
+.places-grid__like-button:active {
+  background-image: url("../../../images/like-button-active.svg");
+}

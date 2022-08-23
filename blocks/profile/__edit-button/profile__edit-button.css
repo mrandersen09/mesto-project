@@ -1,0 +1,38 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: < 1%,last 4 versions
+*/
+
+.profile__edit-button {
+  background-image: url("../../../images/edit-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  height: 24px;
+  width: 24px;
+  margin: 0;
+  background-color: #000;
+  border: 1px solid #fff;
+  grid-area: edit-button;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.profile__edit-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1045px) {
+  .profile__edit-button {
+    margin-left: 10px;
+    height: 18px;
+    width: 18px;
+    background-image: url("../../../images/edit-button-small.svg");
+  }
+}

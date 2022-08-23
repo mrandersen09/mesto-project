@@ -1,0 +1,39 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: < 1%,last 4 versions
+*/
+
+.profile__add-button {
+  margin-left: 27.4%;
+  width: 150px;
+  height: 50px;
+  background-color: #000;
+  border: 2px solid #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-image: url("../../../images/add-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1045px) {
+  .profile__add-button {
+    background-image: url("../../../images/add-button-small.svg");
+    margin-left: 0;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile__add-button {
+    width: 100%;
+  }
+}

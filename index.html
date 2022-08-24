@@ -23,11 +23,11 @@
             <div class="profile__name-and-description">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
               <p class="profile__description">Исследователь океана</p>
-              <button class="profile__edit-button"></button>
+              <button class="profile__edit-button" type="button"></button>
             </div>
           </div>
         </div>
-        <button class="profile__add-button"></button>
+        <button class="profile__add-button" type="button"></button>
       </section>
       <section class="places-grid">
         <div class="places-grid__item">
@@ -36,7 +36,7 @@
           </div>
           <div class="places-grid__caption-and-like">
             <h2 class="places-grid__caption">Карачаевск</h2>
-            <button class="places-grid__like-button"></button>
+            <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
@@ -45,7 +45,7 @@
           </div>
           <div class="places-grid__caption-and-like">
             <h2 class="places-grid__caption">Гора Эльбрус</h2>
-            <button class="places-grid__like-button"></button>
+            <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
@@ -54,7 +54,7 @@
           </div>
           <div class="places-grid__caption-and-like">
             <h2 class="places-grid__caption">Домбай</h2>
-            <button class="places-grid__like-button"></button>
+            <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
@@ -63,7 +63,7 @@
           </div>
           <div class="places-grid__caption-and-like">
             <h2 class="places-grid__caption">Гора Эльбрус</h2>
-            <button class="places-grid__like-button"></button>
+            <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
@@ -72,19 +72,16 @@
           </div>
           <div class="places-grid__caption-and-like">
             <h2 class="places-grid__caption">Домбай</h2>
-            <button class="places-grid__like-button"></button>
+            <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
           <div class="places-grid__image">
-            <img
-              src="./images/karachaevo-cherkesia-six.jpg"
-              alt="карачаево-черкесия"
-            />
+            <img src="./images/karachaevo-six.jpg" alt="карачаево-черкесия" />
           </div>
           <div class="places-grid__caption-and-like">
             <h2 class="places-grid__caption">Карачаево-Черкесия</h2>
-            <button class="places-grid__like-button"></button>
+            <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
       </section>
@@ -93,46 +90,47 @@
       <div class="footer__copyright">&copy; 2022. Андрей Гуляев</div>
     </footer>
     <section class="popup popup_opened">
-      <form
-        class="popup__container"
-        action="index.html"
-        method="post"
-        name="edit-profile"
-        id="profile"
-      >
+      <div class="popup__container">
         <div class="popup__close">
           <button class="popup__close-button"></button>
         </div>
         <h2 class="popup__header">Редактировать профиль</h2>
-        <div class="popup__item">
-          <label for="person-name"></label>
-          <input
-            class="popup__input"
-            tabindex="1"
-            type="text"
-            id="person-name"
-            placeholder="Жак-Ив Кусто"
-          />
-        </div>
-        <div class="popup__item">
-          <label for="person-description"></label>
-          <input
-            class="popup__input"
-            tabindex="2"
-            type="text"
-            id="person-description"
-            placeholder="Исследователь океана"
-          />
-        </div>
-        <div class="popup__submit">
-          <input
-            tabindex="3"
-            type="submit"
-            class="popup__submit-button"
-            value="Сохранить"
-          />
-        </div>
-      </form>
+        <form
+          action="index.html"
+          method="post"
+          name="edit-profile"
+          id="profile"
+        >
+          <div class="popup__item">
+            <label for="person-name"></label>
+            <input
+              class="popup__input"
+              tabindex="1"
+              type="text"
+              id="person-name"
+              placeholder="Жак-Ив Кусто"
+            />
+          </div>
+          <div class="popup__item">
+            <label for="person-description"></label>
+            <input
+              class="popup__input"
+              tabindex="2"
+              type="text"
+              id="person-description"
+              placeholder="Исследователь океана"
+            />
+          </div>
+          <div class="popup__submit">
+            <input
+              tabindex="3"
+              type="submit"
+              class="popup__submit-button"
+              value="Сохранить"
+            />
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 </html>

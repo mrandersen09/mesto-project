@@ -7,7 +7,7 @@
 
 .places-grid__info {
   margin: 0;
-  height: 80px;
+  min-height: 80px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;

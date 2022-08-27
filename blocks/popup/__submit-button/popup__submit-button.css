@@ -6,10 +6,17 @@
 */
 
 .popup__submit-button {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 358px;
   height: 50px;
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -37,7 +44,5 @@
     font-size: 14px;
     width: 238px;
     height: 46px;
-    padding-left: 22px;
-    padding-right: 22px;
   }
 }

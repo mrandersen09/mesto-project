@@ -6,6 +6,11 @@
 */
 
 .profile__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -24,7 +29,6 @@
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
-  height: 120px;
 }
 
 @media screen and (max-width: 1045px) {

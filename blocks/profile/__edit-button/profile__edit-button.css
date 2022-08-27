@@ -7,6 +7,7 @@
 
 .profile__edit-button {
   background-image: url("../../../images/edit-button.svg");
+  background-size: 10px;
   background-repeat: no-repeat;
   background-position: center;
   -ms-grid-row-align: center;
@@ -33,6 +34,6 @@
     margin-left: 10px;
     height: 18px;
     width: 18px;
-    background-image: url("../../../images/edit-button-small.svg");
+    background-size: 7.5px;
   }
 }

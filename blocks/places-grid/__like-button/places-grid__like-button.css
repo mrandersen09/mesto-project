@@ -1,23 +1,36 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: < 1%,last 4 versions
+*/
+
 .places-grid__like-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border: 0;
   outline: none;
   width: 22px;
   height: 19px;
   margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-image: url("../../../images/like-button-disabled.svg");
   background-color: #fff;
   background-repeat: no-repeat;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .places-grid__like-button:hover {
-  background-image: url("../../../images/like-button-hover.svg");
+  opacity: 0.5;
   cursor: pointer;
 }
 
 .places-grid__like-button:active {
   background-image: url("../../../images/like-button-active.svg");
+  opacity: 1;
 }

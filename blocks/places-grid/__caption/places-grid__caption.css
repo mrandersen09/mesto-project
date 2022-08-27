@@ -6,6 +6,8 @@
 */
 
 .places-grid__caption {
+  margin: 0;
+  padding: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-size: 24px;

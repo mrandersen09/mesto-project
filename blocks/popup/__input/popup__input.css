@@ -6,11 +6,21 @@
 */
 
 .popup__input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0;
-  padding: 0;
+  padding-bottom: 8px;
   width: 358px;
   border: 0;
-  border-bottom: 1px solid #545454;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -20,10 +30,12 @@
   appearance: none;
   font-size: 14px;
   line-height: 1.21;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 30px;
 }
 
 @media screen and (max-width: 768px) {

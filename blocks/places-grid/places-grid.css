@@ -6,6 +6,8 @@
 */
 
 .places-grid {
+  margin: 0;
+  padding: 0;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: justify;
@@ -16,13 +18,11 @@
   -ms-grid-columns: 282px 282px 282px;
   grid-template-columns: 282px 282px 282px;
   -ms-grid-rows: 365px 16px 365px;
-  grid-template-rows: 365px 365px;
+  grid-template-rows: 361px 361px;
   grid-row-gap: 16px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 .places-grid > *:nth-child(1) {
   -ms-grid-row: 1;

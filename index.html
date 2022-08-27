@@ -15,71 +15,79 @@
       <section class="profile">
         <img
           class="profile__avatar"
-          src="./images/kusto-avatar-square.svg"
+          src="./images/kusto-avatar-square.jpg"
           alt="кусто"
         />
         <div class="profile__info">
-          <div class="profile__edit">
-            <div class="profile__name-and-description">
-              <h1 class="profile__name">Жак-Ив Кусто</h1>
-              <p class="profile__description">Исследователь океана</p>
-              <button class="profile__edit-button" type="button"></button>
-            </div>
-          </div>
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <p class="profile__description">Исследователь океана</p>
+          <button class="profile__edit-button" type="button"></button>
         </div>
         <button class="profile__add-button" type="button"></button>
       </section>
       <section class="places-grid">
         <div class="places-grid__item">
-          <div class="places-grid__image">
-            <img src="./images/karachaevsk-one.jpg" alt="карачевск" />
-          </div>
-          <div class="places-grid__caption-and-like">
+          <img
+            class="places-grid__image"
+            src="./images/karachaevsk-one.jpg"
+            alt="карачевск"
+          />
+          <div class="places-grid__info">
             <h2 class="places-grid__caption">Карачаевск</h2>
             <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
-          <div class="places-grid__image">
-            <img src="./images/elbrus-two.jpg" alt="эльбрус" />
-          </div>
-          <div class="places-grid__caption-and-like">
+          <img
+            class="places-grid__image"
+            src="./images/elbrus-two.jpg"
+            alt="эльбрус"
+          />
+          <div class="places-grid__info">
             <h2 class="places-grid__caption">Гора Эльбрус</h2>
             <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
-          <div class="places-grid__image">
-            <img src="./images/dombai-three.jpg" alt="домбай" />
-          </div>
-          <div class="places-grid__caption-and-like">
+          <img
+            class="places-grid__image"
+            src="./images/dombai-three.jpg"
+            alt="домбай"
+          />
+          <div class="places-grid__info">
             <h2 class="places-grid__caption">Домбай</h2>
             <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
-          <div class="places-grid__image">
-            <img src="./images/elbrus-four.jpg" alt="эльбрус" />
-          </div>
-          <div class="places-grid__caption-and-like">
+          <img
+            class="places-grid__image"
+            src="./images/elbrus-four.jpg"
+            alt="эльбрус"
+          />
+          <div class="places-grid__info">
             <h2 class="places-grid__caption">Гора Эльбрус</h2>
             <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
-          <div class="places-grid__image">
-            <img src="./images/dombai-five.jpg" alt="домбай" />
-          </div>
-          <div class="places-grid__caption-and-like">
+          <img
+            class="places-grid__image"
+            src="./images/dombai-five.jpg"
+            alt="домбай"
+          />
+          <div class="places-grid__info">
             <h2 class="places-grid__caption">Домбай</h2>
             <button class="places-grid__like-button" type="button"></button>
           </div>
         </div>
         <div class="places-grid__item">
-          <div class="places-grid__image">
-            <img src="./images/karachaevo-six.jpg" alt="карачаево-черкесия" />
-          </div>
-          <div class="places-grid__caption-and-like">
+          <img
+            class="places-grid__image"
+            src="./images/karachaevo-six.jpg"
+            alt="карачаево-черкесия"
+          />
+          <div class="places-grid__info">
             <h2 class="places-grid__caption">Карачаево-Черкесия</h2>
             <button class="places-grid__like-button" type="button"></button>
           </div>
@@ -87,13 +95,11 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__copyright">&copy; 2022. Андрей Гуляев</div>
+      <p class="footer__copyright">&copy; 2022. Андрей Гуляев</p>
     </footer>
-    <section class="popup popup_opened">
+    <div class="popup">
       <div class="popup__container">
-        <div class="popup__close">
-          <button class="popup__close-button"></button>
-        </div>
+        <button class="popup__close-button" type="button"></button>
         <h2 class="popup__header">Редактировать профиль</h2>
         <form
           action="index.html"
@@ -101,36 +107,30 @@
           name="edit-profile"
           id="profile"
         >
-          <div class="popup__item">
-            <label for="person-name"></label>
-            <input
-              class="popup__input"
-              tabindex="1"
-              type="text"
-              id="person-name"
-              placeholder="Жак-Ив Кусто"
-            />
-          </div>
-          <div class="popup__item">
-            <label for="person-description"></label>
-            <input
-              class="popup__input"
-              tabindex="2"
-              type="text"
-              id="person-description"
-              placeholder="Исследователь океана"
-            />
-          </div>
-          <div class="popup__submit">
-            <input
-              tabindex="3"
-              type="submit"
-              class="popup__submit-button"
-              value="Сохранить"
-            />
-          </div>
+          <input
+            class="popup__input"
+            tabindex="1"
+            type="text"
+            id="person-name"
+            placeholder="Имя Фамилия"
+            name="person-name"
+          />
+          <input
+            class="popup__input"
+            tabindex="2"
+            type="text"
+            id="person-description"
+            placeholder="Профессия"
+          />
+          <input
+            tabindex="3"
+            type="submit"
+            class="popup__submit-button"
+            value="Сохранить"
+            name="person-description"
+          />
         </form>
       </div>
-    </section>
+    </div>
   </body>
 </html>
